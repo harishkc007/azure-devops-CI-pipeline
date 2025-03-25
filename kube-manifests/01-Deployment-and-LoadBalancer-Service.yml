@@ -5,7 +5,7 @@ metadata:
   labels:
     app: app1-nginx
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: app1-nginx
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: app1-nginx
-          image: acrtestmarch.azurecr.io/acrtestmarch:206
+          image: azacrmarch25.azurecr.io/flipkart:208
           ports:
             - containerPort: 80
 ---
